@@ -7,27 +7,67 @@
     <title>Movie Project</title>
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
 
-  <body>
+  <body class="p-10">
     <header>
-      <h1>Movie Project</h1>
+      <h1
+        class="text-center mb-4 text-4xl font-extrabold md:text-5xl lg: text-6xl text-red-500"
+      >
+        CineScope
+      </h1>
     </header>
 
     <main>
-      <form action="">
-        <label for="movieName">Movie Name:</label>
-        <input type="text" id="movieName" name="movieName" value="Iron Man" />
-        <button type="submit" id="searchButton">Search</button>
-      </form>
+      <div
+        class="flex p-2 border-2 rounded-2xl content-center border-red-500 max-w-md mx-auto"
+      >
+        <input
+          type="text"
+          id="movieName"
+          placeholder="Search Something..."
+          class="text-white w-full outline-none bg-transparent text-red-200"
+        />
+        <button type="submit" id="searchButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 192.904 192.904"
+            width="24px"
+            class="fill-red-500"
+          >
+            <path
+              d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z"
+            ></path>
+          </svg>
+        </button>
+      </div>
 
       <h3><b>Movie: </b><span id="title" class="title"></span></h3>
 
-      <p><b>Released: </b><span id="year" class="year"></span></p>
+      <p><b>Released: </b><span id="releaseDate" class="releaseDate"></span></p>
 
       <p><b>Rating: </b><span id="rating" class="rating"></span></p>
 
       <p><b>Box Office: </b><span id="boxOffice" class="boxOffice"></span></p>
+
+      <button id="moreInfo">More Info</button>
+
+      <div id="extraContent" class="extraContent">
+        <p><b>Runtime: </b><span id="runtime" class="runtime"></span></p>
+        <p><b>Actors: </b><span id="actors" class="actors"></span></p>
+        <p><b>Awards: </b><span id="awards" class="awards"></span></p>
+        <p><b>Director: </b><span id="director" class="director"></span></p>
+        <p><b>Genre: </b><span id="genre" class="genre"></span></p>
+        <p><b>Language: </b><span id="language" class="language"></span></p>
+        <p><b>Metascore: </b><span id="metascore" class="metascore"></span></p>
+        <p><b>Plot: </b><span id="plot" class="plot"></span></p>
+
+        <p>
+          <b>IMDB Rating: </b><span id="imdbRating" class="imdbRating"></span>
+        </p>
+        <p><b>IMDB Votes: </b><span id="imdbVotes" class="imdbVotes"></span></p>
+      </div>
 
       <img
         src="https://m.media-amazon.com/images/M/MV5BOTJlNzY5OTAtNjIxNi00MTUxLWJkZjEtZDcxYTg2YWY0MjZkXkEyXkFqcGc@._V1_SX300.jpg"
@@ -41,17 +81,3 @@
     <script src="scripts.js"></script>
   </body>
 </html>
-
-<!-- {Title: 'Monkey Man', Year: '2024', Rated: 'R', Released: '05 Apr 2024',
-Runtime: '121 min', …} Actors : "Dev Patel, Sharlto Copley, Pitobash" Awards :
-"4 wins & 6 nominations" BoxOffice : "$25,116,955" Country : "United States,
-Canada, Singapore, India" DVD : "N/A" Director : "Dev Patel" Genre : "Action,
-Crime, Thriller" Language : "English, Hindi" Metascore : "70" Plot : "An
-anonymous young man unleashes a campaign of vengeance against the corrupt
-leaders who murdered his mother and continue to systematically victimize the
-poor and powerless." Poster :
-"https://m.media-amazon.com/images/M/MV5BOTJlNzY5OTAtNjIxNi00MTUxLWJkZjEtZDcxYTg2YWY0MjZkXkEyXkFqcGc@._V1_SX300.jpg"
-Production : "N/A" Rated : "R" Ratings : (3) [{…}, {…}, {…}] Released : "05 Apr
-2024" Response : "True" Runtime : "121 min" Title : "Monkey Man" Type : "movie"
-Website : "N/A" Writer : "Dev Patel, Paul Angunawela, John Collee" Year : "2024"
-imdbID : "tt9214772" imdbRating : "6.8" imdbVotes : "80,607" -->
